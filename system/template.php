@@ -5,7 +5,7 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 	
-	<script type="text/javascript" src="../frameworks/<?php echo $_GET['include']; ?>"></script>
+	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/<?php echo $_GET['lib']; ?>/<?php echo $_GET['v']; ?>/<?php echo $_GET['file']; ?>"></script>
 	
 	<script type="text/javascript">
 		

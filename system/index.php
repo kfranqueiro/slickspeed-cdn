@@ -38,10 +38,8 @@
 
 <?php
 	foreach ($frameworks as $framework => $properties){
-		$include = $properties['file'];
-		$function = $properties['function'];
 		$time = time();
-		echo "<iframe name='$framework' src='system/template.php?include=$include&function=$function&nocache=$time'></iframe>\n\n";
+		echo "<iframe name='$framework' src='system/template.php?lib=$properties[lib]&v=$properties[version]&file=$properties[file]&function=$properties[function]&nocache=$time'></iframe>\n\n";
 	}
 ?>
 
@@ -52,7 +50,7 @@
 			<th class="selectors-title">selectors</th>
 			<?php
 				foreach ($frameworks as $framework => $properties){
-					echo "<th class='framework'>$framework</th>";
+					echo "<th class='framework'>$framework $properties[version]</th>";
 				}
 			?>
 		</tr>
